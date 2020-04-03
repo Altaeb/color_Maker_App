@@ -28,29 +28,21 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="9Ob-9O-IxS"/>
                                             <constraint firstAttribute="height" constant="21" id="G2U-V6-Jiu"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="LeG-z5-AkR"/>
-                                            <constraint firstAttribute="width" constant="73" id="k3Y-gd-n7T"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zZ7-a9-FSD">
-                                        <rect key="frame" x="111" y="18" width="51" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="BIz-lc-eOT"/>
-                                            <constraint firstAttribute="width" constant="49" id="WiU-lb-jSC"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="jYk-NM-JBA"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="psu-IR-J40"/>
-                                        </constraints>
-                                        <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XZN-Jg-Cq4" userLabel="Red Control">
+                                        <rect key="frame" x="96" y="19" width="118" height="30"/>
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <action selector="changeColorComponent" destination="vXZ-lx-hvc" eventType="valueChanged" id="dzv-r8-t8g"/>
+                                            <action selector="changeColorComponent" destination="vXZ-lx-hvc" eventType="valueChanged" id="fHu-gZ-796"/>
                                         </connections>
-                                    </switch>
+                                    </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeB-Ui-15Q">
                                         <rect key="frame" x="17" y="73" width="73" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="73" id="brE-rH-dHa"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="ijK-cS-6HX"/>
                                             <constraint firstAttribute="height" constant="21" id="khy-BX-fn1"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="rCD-a4-8qJ"/>
@@ -59,21 +51,20 @@
                                         <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aoV-z2-sOS">
-                                        <rect key="frame" x="111" y="68" width="51" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="P9X-pK-BzP" userLabel="Green Control">
+                                        <rect key="frame" x="98" y="73" width="118" height="30"/>
+                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="49" id="C0A-SY-ijk"/>
-                                            <constraint firstAttribute="height" constant="31" id="oNn-Wk-0EM"/>
+                                            <constraint firstAttribute="height" constant="29" id="Tas-TV-srM"/>
                                         </constraints>
                                         <connections>
-                                            <action selector="changeColorComponent" destination="vXZ-lx-hvc" eventType="valueChanged" id="bM7-5H-5PL"/>
+                                            <action selector="changeColorComponent" destination="vXZ-lx-hvc" eventType="valueChanged" id="B1A-3f-zE1"/>
                                         </connections>
-                                    </switch>
+                                    </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfO-MJ-TIi">
                                         <rect key="frame" x="17" y="124" width="73" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="02j-l3-0MZ"/>
-                                            <constraint firstAttribute="width" constant="73" id="DlF-DC-GKp"/>
                                             <constraint firstAttribute="height" constant="21" id="Hs0-9A-S2S"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="exO-el-bxY"/>
                                         </constraints>
@@ -81,29 +72,36 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mrj-g1-6nX">
-                                        <rect key="frame" x="111" y="119" width="51" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="onTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="uCb-GL-LCG" userLabel="Blue Control">
+                                        <rect key="frame" x="100" y="124" width="118" height="30"/>
+                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <action selector="changeColorComponent" destination="vXZ-lx-hvc" eventType="valueChanged" id="hGY-Zp-7vw"/>
+                                            <action selector="changeColorComponent" destination="vXZ-lx-hvc" eventType="valueChanged" id="uR8-s8-qB0"/>
                                         </connections>
-                                    </switch>
+                                    </slider>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="aoV-z2-sOS" firstAttribute="top" secondItem="zZ7-a9-FSD" secondAttribute="bottom" constant="19" id="C4J-tO-z25"/>
+                                    <constraint firstAttribute="bottom" secondItem="uCb-GL-LCG" secondAttribute="bottom" constant="12" id="7a3-l0-L9p"/>
                                     <constraint firstAttribute="width" constant="180" id="Gnl-IH-leD"/>
+                                    <constraint firstItem="XZN-Jg-Cq4" firstAttribute="leading" secondItem="Bwv-Kc-EhE" secondAttribute="trailing" constant="8" symbolic="YES" id="H8I-I7-M5U"/>
+                                    <constraint firstItem="XZN-Jg-Cq4" firstAttribute="top" secondItem="23a-9A-dZi" secondAttribute="top" constant="19" id="Hx6-89-ngc"/>
                                     <constraint firstItem="Bwv-Kc-EhE" firstAttribute="top" secondItem="23a-9A-dZi" secondAttribute="top" constant="23" id="MWB-Q7-jxt"/>
                                     <constraint firstAttribute="height" constant="165" id="MZj-0S-GRN"/>
-                                    <constraint firstItem="aoV-z2-sOS" firstAttribute="leading" secondItem="oeB-Ui-15Q" secondAttribute="trailing" constant="21" id="NQb-Gp-qvg"/>
+                                    <constraint firstItem="XZN-Jg-Cq4" firstAttribute="centerY" secondItem="Bwv-Kc-EhE" secondAttribute="centerY" id="Mhv-ka-KbA"/>
+                                    <constraint firstItem="uCb-GL-LCG" firstAttribute="top" secondItem="P9X-pK-BzP" secondAttribute="bottom" constant="22" id="Nbu-S4-Erh"/>
                                     <constraint firstItem="vfO-MJ-TIi" firstAttribute="top" secondItem="oeB-Ui-15Q" secondAttribute="bottom" constant="30" id="NvI-9S-pVL"/>
                                     <constraint firstItem="vfO-MJ-TIi" firstAttribute="leading" secondItem="23a-9A-dZi" secondAttribute="leading" constant="17" id="OBg-Jc-pGl"/>
+                                    <constraint firstAttribute="trailing" secondItem="P9X-pK-BzP" secondAttribute="trailing" constant="-34" id="UTy-T9-FAG"/>
+                                    <constraint firstItem="P9X-pK-BzP" firstAttribute="top" secondItem="XZN-Jg-Cq4" secondAttribute="bottom" constant="25" id="W0z-0X-y3N"/>
+                                    <constraint firstItem="uCb-GL-LCG" firstAttribute="leading" secondItem="vfO-MJ-TIi" secondAttribute="trailing" constant="12" id="X3z-av-6zS"/>
                                     <constraint firstItem="oeB-Ui-15Q" firstAttribute="leading" secondItem="23a-9A-dZi" secondAttribute="leading" constant="17" id="c3K-Q5-KN7"/>
-                                    <constraint firstItem="zZ7-a9-FSD" firstAttribute="top" secondItem="23a-9A-dZi" secondAttribute="top" constant="18" id="ctw-Ls-yZd"/>
+                                    <constraint firstAttribute="trailing" secondItem="uCb-GL-LCG" secondAttribute="trailing" constant="-36" id="eXS-zb-yl3"/>
                                     <constraint firstItem="Bwv-Kc-EhE" firstAttribute="leading" secondItem="23a-9A-dZi" secondAttribute="leading" constant="17" id="gDF-Hr-R79"/>
+                                    <constraint firstItem="XZN-Jg-Cq4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bwv-Kc-EhE" secondAttribute="trailing" constant="8" symbolic="YES" id="gdG-A3-c72"/>
+                                    <constraint firstAttribute="trailing" secondItem="XZN-Jg-Cq4" secondAttribute="trailing" constant="-32" id="iJG-Ub-NP4"/>
+                                    <constraint firstItem="P9X-pK-BzP" firstAttribute="leading" secondItem="oeB-Ui-15Q" secondAttribute="trailing" constant="10" id="mwJ-hM-5lW"/>
                                     <constraint firstItem="oeB-Ui-15Q" firstAttribute="top" secondItem="Bwv-Kc-EhE" secondAttribute="bottom" constant="29" id="pWq-pX-oui"/>
-                                    <constraint firstItem="zZ7-a9-FSD" firstAttribute="leading" secondItem="Bwv-Kc-EhE" secondAttribute="trailing" constant="21" id="yKh-qm-ZEu"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ES2-hS-6pV">
@@ -138,10 +136,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueControl" destination="mrj-g1-6nX" id="JG0-dh-lUZ"/>
+                        <outlet property="blueControl" destination="uCb-GL-LCG" id="OLt-DS-Qgq"/>
                         <outlet property="colorView" destination="AjB-H9-6TC" id="MuV-Pd-o4c"/>
-                        <outlet property="greenControl" destination="aoV-z2-sOS" id="HTb-Od-aiY"/>
-                        <outlet property="redControl" destination="zZ7-a9-FSD" id="5rf-UG-Qgh"/>
+                        <outlet property="greenControl" destination="P9X-pK-BzP" id="3nY-Yg-MRo"/>
+                        <outlet property="redControl" destination="XZN-Jg-Cq4" id="YmT-N7-HPj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
